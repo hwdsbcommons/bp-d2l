@@ -74,15 +74,6 @@ class BP_D2L extends BP_Component {
 	 */
 	function setup_nav( $main_nav = array(), $sub_nav = array() ) {
 
-		// BuddyBar compatibility
-		//$domain = bp_displayed_user_domain() ? bp_displayed_user_domain() : bp_loggedin_user_domain();
-
-		// Need to change the user ID, so if we're not on a member page, $counts variable is still calculated
-		//$user_id = bp_is_user() ? bp_displayed_user_id() : bp_loggedin_user_id();
-		//$counts  = bp_follow_total_follow_counts( array( 'user_id' => $user_id ) );
-
-		/** FOLLOWERS NAV ************************************************/
-
 		bp_core_new_nav_item( array(
 			//'name'                => sprintf( __( 'Courses <span>%d</span>', 'bp-d2l' ), 0 ),
 			'name'                => __( 'Courses', 'bp-d2l' ),

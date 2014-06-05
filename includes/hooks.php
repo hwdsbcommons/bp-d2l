@@ -25,8 +25,6 @@ function bp_d2l_lti_auth() {
 	
 		// find the user
 		$user = get_user_by( 'email', $user_email );
-		//$user = new stdClass;
-		//$user->ID = 11574;
 
 		// user exists!
 		// log the user in
@@ -135,7 +133,6 @@ function bp_d2l_ajax_querystring( $qs, $object ) {
 		return $qs;
 	}
 
-	///* comment out meta query - there are bugs with total count
 	parse_str( $qs, $query_args );
 
 	$query_args['meta_query'] = array(
@@ -145,12 +142,7 @@ function bp_d2l_ajax_querystring( $qs, $object ) {
 		)
 	);
 
-	//print_r($query_args);
-
 	return $query_args;
-	//*/
-
-	// use 'include' parameter
 }
 
 /**
