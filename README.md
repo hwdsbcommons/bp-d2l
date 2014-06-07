@@ -61,3 +61,7 @@ Once this is done, navigate to a group's admin page:
 `example.com/groups/TEST-GROUP/admin/edit-details`
 
 There should be a tab labelled **Course**.  Click on this tab.  You should then be able to select a D2L course to connect to a BuddyPress group.
+
+Membership of the group does not sync automatically. If users are added to the course after the initial connection, you'll need to hit the re-sync button to sync new members. When users leave a course, they need to be manually removed from the BP Group. 
+
+Used in tandem with the BP GroupBlog plug, this also provides a way to create a blog for your course. 
